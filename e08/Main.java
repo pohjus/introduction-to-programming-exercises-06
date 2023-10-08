@@ -9,7 +9,15 @@ public class Main {
      *
      * @param args Command line arguments
      */
-    public static void main(String[] args) {
+    @SuppressWarnings("checkstyle:MagicNumber")
+    public static void main(final String[] args) {
+        int absValue = MathUtils.abs(-7);
+        System.out.println(absValue); // 7
 
+        int max = MathUtils.max(10, 20);
+        System.out.println(max); // 20
+
+        int random = MathUtils.random(max);
+        System.out.println(random); // random number between 0 and 20
     }
 }
